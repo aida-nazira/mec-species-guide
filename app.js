@@ -68,12 +68,13 @@ function renderSpecies(id, idx){
       <!-- REAL PHOTO -->
       <div class="species-photo">
 
-        <img
-          src="${esc(s.image)}"
-          alt="${esc(s.imageAlt)}"
-          loading="lazy"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-        >
+       <img
+  src="${esc(s.chibi)}"
+  alt="Cute illustrated ${esc(s.name)}"
+  class="chibi-image"
+  loading="lazy"
+  onerror="this.style.display='none'"
+>
 
         <div class="photo-placeholder">
           <span>📷</span>
