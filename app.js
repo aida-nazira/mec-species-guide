@@ -66,22 +66,24 @@ function renderSpecies(id, idx){
     >
 
       <!-- REAL PHOTO -->
-      <div class="species-photo">
+<div class="species-photo">
 
-       <img
-  src="${esc(s.chibi)}"
-  alt="Cute illustrated ${esc(s.name)}"
-  class="chibi-image"
-  loading="lazy"
-  onerror="this.style.display='none'"
->
+  <img
+    src="${esc(s.image)}"
+    alt="${esc(s.imageAlt)}"
+    class="real-photo"
+    loading="lazy"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+  >
 
-        <div class="photo-placeholder">
-          <span>📷</span>
-          <strong>Real-life photo</strong>
-        </div>
+  <div class="photo-placeholder">
+    <span>📷</span>
+    <strong>Real-life photo unavailable</strong>
+    <small>Please check the image filename in assets/real/</small>
+  </div>
 
-      </div>
+</div>
+
 
 
       <!-- CHIBI CHARACTER -->
