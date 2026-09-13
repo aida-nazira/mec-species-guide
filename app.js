@@ -376,6 +376,12 @@ document.getElementById("species-content").innerHTML =
     .map(renderSpecies)
     .join("");
 
+/* --------------------------------
+   HERO CHIBI
+-------------------------------- */
+
+renderHeroChibi(exhibit.species[0]);
+
 
 
 /* --------------------------------
