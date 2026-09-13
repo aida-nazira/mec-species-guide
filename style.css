@@ -343,167 +343,257 @@ footer .tiny{font-size:.68rem;opacity:.7}
    CHIBI ANIMAL MOVEMENTS
 ========================================= */
 
-/* SHARK — gentle swimming */
+.chibi-image{
+  position:relative;
+  z-index:2;
+
+  width:min(72%,320px);
+  max-height:230px;
+
+  object-fit:contain;
+
+  filter:drop-shadow(0 15px 12px rgba(0,0,0,.18));
+
+  will-change:transform;
+
+  transform-origin:center center;
+}
+
+
+/* =========================
+   BAMBOO SHARK
+   Gentle swimming
+========================= */
+
 .chibi-shark .chibi-image{
-  animation: sharkSwim 2.8s ease-in-out infinite !important;
+  animation:sharkSwim 3s ease-in-out infinite;
 }
 
 @keyframes sharkSwim{
+
   0%,100%{
     transform:translateX(-12px) rotate(-2deg);
   }
+
   50%{
     transform:translateX(12px) rotate(2deg);
   }
+
 }
 
 
-/* SEA STAR — little floating wobble */
+/* =========================
+   SEA STAR
+   Slow wobble
+========================= */
+
 .chibi-seastar .chibi-image{
-  animation: starWobble 3.5s ease-in-out infinite !important;
+  animation:starWobble 4s ease-in-out infinite;
 }
 
 @keyframes starWobble{
+
   0%,100%{
     transform:translateY(5px) rotate(-4deg);
   }
+
   50%{
-    transform:translateY(-9px) rotate(5deg);
+    transform:translateY(-8px) rotate(5deg);
   }
+
 }
 
 
-/* HORSESHOE CRAB — crawling movement */
+/* =========================
+   HORSESHOE CRAB
+   Little crawl
+========================= */
+
 .chibi-horseshoe .chibi-image{
-  animation: horseshoeCrawl 3s ease-in-out infinite !important;
+  animation:horseshoeCrawl 3.5s ease-in-out infinite;
 }
 
 @keyframes horseshoeCrawl{
+
   0%,100%{
-    transform:translateX(-10px) rotate(-2deg);
+    transform:translateX(-14px) rotate(-2deg);
   }
+
   50%{
-    transform:translateX(10px) rotate(2deg);
+    transform:translateX(14px) rotate(2deg);
   }
+
 }
 
 
-/* MOON JELLY — pulsing / drifting */
+/* =========================
+   MOON JELLY
+   Floating + pulsing
+========================= */
+
 .chibi-moon .chibi-image{
-  animation: moonPulse 2.4s ease-in-out infinite !important;
+  animation:moonPulse 2.6s ease-in-out infinite;
 }
 
 @keyframes moonPulse{
+
   0%,100%{
     transform:translateY(8px) scaleY(1);
   }
+
   50%{
-    transform:translateY(-10px) scaleY(.90);
+    transform:translateY(-10px) scaleY(.92);
   }
+
 }
 
 
-/* LEOPARD GECKO — curious head/body movement */
+/* =========================
+   LEOPARD GECKO
+   Curious movement
+========================= */
+
 .chibi-gecko .chibi-image{
-  animation: geckoCurious 3.2s ease-in-out infinite !important;
+  animation:geckoCurious 3.5s ease-in-out infinite;
 }
 
 @keyframes geckoCurious{
+
   0%,100%{
-    transform:translateX(-4px) rotate(-2deg);
+    transform:translateX(-5px) rotate(-2deg);
   }
-  35%{
-    transform:translateX(4px) rotate(2deg);
-  }
-  55%{
-    transform:translateX(8px) rotate(1deg);
-  }
-  75%{
-    transform:translateX(0) rotate(-1deg);
-  }
-}
 
-
-/* AMBER DUCKY ISOPOD — tiny wiggle */
-.chibi-ducky .chibi-image{
-  animation: duckyWiggle 1.8s ease-in-out infinite !important;
-}
-
-@keyframes duckyWiggle{
-  0%,100%{
-    transform:rotate(0deg) translateX(-3px);
+  30%{
+    transform:translateX(5px) rotate(2deg);
   }
-  25%{
-    transform:rotate(-4deg) translateX(2px);
-  }
-  50%{
-    transform:rotate(3deg) translateX(4px);
-  }
-  75%{
-    transform:rotate(-2deg) translateX(0);
-  }
-}
 
-
-/* STRAWBERRY CANDY PILL MILLIPEDE — crawling */
-.chibi-candy .chibi-image{
-  animation: candyCrawl 2.7s ease-in-out infinite !important;
-}
-
-@keyframes candyCrawl{
-  0%,100%{
-    transform:translateX(-9px) rotate(-1deg);
-  }
   50%{
     transform:translateX(9px) rotate(1deg);
   }
+
+  70%{
+    transform:translateX(0) rotate(-1deg);
+  }
+
 }
 
 
-/* AMBER TETRA — swimming */
+/* =========================
+   AMBER DUCKY ISOPOD
+   Tiny wiggle
+========================= */
+
+.chibi-ducky .chibi-image{
+  animation:duckyWiggle 2s ease-in-out infinite;
+}
+
+@keyframes duckyWiggle{
+
+  0%,100%{
+    transform:rotate(0deg) translateX(-3px);
+  }
+
+  25%{
+    transform:rotate(-3deg) translateX(3px);
+  }
+
+  50%{
+    transform:rotate(3deg) translateX(5px);
+  }
+
+  75%{
+    transform:rotate(-2deg) translateX(0);
+  }
+
+}
+
+
+/* =========================
+   STRAWBERRY CANDY
+   Crawling
+========================= */
+
+.chibi-candy .chibi-image{
+  animation:candyCrawl 2.8s ease-in-out infinite;
+}
+
+@keyframes candyCrawl{
+
+  0%,100%{
+    transform:translateX(-12px) rotate(-1deg);
+  }
+
+  50%{
+    transform:translateX(12px) rotate(1deg);
+  }
+
+}
+
+
+/* =========================
+   AMBER TETRA
+   Swimming
+========================= */
+
 .chibi-tetra .chibi-image{
-  animation: tetraSwim 2.2s ease-in-out infinite !important;
+  animation:tetraSwim 2.4s ease-in-out infinite;
 }
 
 @keyframes tetraSwim{
+
   0%,100%{
-    transform:translateX(-14px) translateY(2px);
+    transform:translateX(-15px) translateY(3px);
   }
+
   50%{
-    transform:translateX(14px) translateY(-5px);
+    transform:translateX(15px) translateY(-6px);
   }
+
 }
 
 
-/* WHITE'S TREE FROG — breathing / bouncing */
+/* =========================
+   WHITE'S TREE FROG
+   Breathing / bouncing
+========================= */
+
 .chibi-frog .chibi-image{
-  animation: frogBounce 2.5s ease-in-out infinite !important;
+  animation:frogBounce 2.8s ease-in-out infinite;
 }
 
 @keyframes frogBounce{
+
   0%,100%{
     transform:scale(1) translateY(3px);
   }
+
   50%{
-    transform:scale(1.045) translateY(-7px);
+    transform:scale(1.045) translateY(-8px);
   }
+
 }
 
 
-/* CROCODILE SKINK — creeping */
+/* =========================
+   CROCODILE SKINK
+   Creeping
+========================= */
+
 .chibi-skink .chibi-image{
-  animation: skinkCreep 3.4s ease-in-out infinite !important;
+  animation:skinkCreep 3.6s ease-in-out infinite;
 }
 
 @keyframes skinkCreep{
-  0%,100%{
-    transform:translateX(-8px);
-  }
-  50%{
-    transform:translateX(9px);
-  }
-}
 
+  0%,100%{
+    transform:translateX(-10px);
+  }
+
+  50%{
+    transform:translateX(10px);
+  }
+
+}
 
 /* =========================================
    UNIVERSAL CHIBI FLOAT
