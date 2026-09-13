@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#073b4c">
+  <title>MEC Species Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-bubbles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <a class="brand" href="index.html">MEC <span>Species Guide</span></a>
+      <div id="hero-art" class="hero-art" aria-hidden="true"></div>
+      <p class="eyebrow" id="exhibit-kicker">Marine Education Center</p>
+      <h1 id="exhibit-title">Meet the animals!</h1>
+      <p class="hero-subtitle" id="exhibit-intro">Scan. Explore. Discover something amazing.</p>
+      <div class="scroll-hint">↓ Explore below</div>
+    </header>
+
+    <main>
+      <section id="exhibit-intro-card" class="intro-card hidden">
+        <div>
+          <span class="section-label">About this exhibit</span>
+          <h2 id="intro-title"></h2>
+          <p id="intro-text"></p>
+        </div>
+      </section>
+
+      <section class="species-section">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">Your neighbours</span>
+            <h2 id="species-heading">Species in this exhibit</h2>
+          </div>
+          <div class="swipe-note">Tap a card to explore</div>
+        </div>
+        <div id="species-nav" class="species-nav"></div>
+      </section>
+
+      <section id="species-content"></section>
+
+      <section class="visitor-note">
+        <div class="note-icon">👀</div>
+        <div>
+          <strong>Look closely!</strong>
+          <p>Animals may be resting, hiding or simply doing their own thing. Please observe quietly and never tap the glass.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Marine Education Center</strong> · Species information guide</p>
+      <p class="tiny">Educational content for guest learning. Husbandry details are intentionally kept separate from guest-facing information.</p>
+    </footer>
+  </div>
+  <script src="species.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
