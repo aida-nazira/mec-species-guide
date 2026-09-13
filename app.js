@@ -380,8 +380,6 @@ document.getElementById("species-content").innerHTML =
    HERO
 -------------------------------- */
 
-renderHeroChibi(exhibit.species[0]);
-
 
 /* --------------------------------
    NAVIGATION
