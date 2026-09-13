@@ -31,9 +31,26 @@ body{
 }
 a{color:inherit}
 .page-shell{max-width:980px;margin:auto;overflow:hidden}
-.hero{min-height:520px;padding:24px 22px 44px;position:relative;text-align:center;background:
-linear-gradient(180deg,rgba(4,48,62,.97),rgba(6,83,98,.94) 72%,rgba(11,114,133,.92));
-color:white;border-radius:0 0 38px 38px;box-shadow:var(--shadow)}
+.hero{
+  min-height:520px;
+  padding:24px 22px 44px;
+  position:relative;
+  text-align:center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4,48,62,.58),
+      rgba(6,83,98,.55) 72%,
+      rgba(11,114,133,.48)
+    ),
+    url("deep-ocean-background.jpg")
+    center center / cover;
+
+  color:white;
+  border-radius:0 0 38px 38px;
+  box-shadow:var(--shadow);
+}
 .brand{position:absolute;left:22px;top:22px;text-decoration:none;font-weight:900;letter-spacing:.02em}
 .brand span{font-weight:500;opacity:.75}
 .hero-art{height:250px;margin:42px auto 8px;max-width:460px;display:grid;place-items:center;position:relative}
