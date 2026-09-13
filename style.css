@@ -24,9 +24,10 @@ body{
       rgba(3,83,98,.25)
     ),
     url("deep-ocean-background.jpg")
-    center center / cover fixed;
+    center center / cover;
 
   background-repeat:no-repeat;
+  background-attachment:fixed;
 }
 a{color:inherit}
 .page-shell{max-width:980px;margin:auto;overflow:hidden}
