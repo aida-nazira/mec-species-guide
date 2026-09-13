@@ -256,27 +256,20 @@ footer .tiny{font-size:.68rem;opacity:.7}
 ========================================= */
 
 .chibi-image{
-
   position:relative;
-
   z-index:2;
 
   width:min(72%,320px);
-
   max-height:230px;
 
   object-fit:contain;
 
-  filter:
-    drop-shadow(
-      0 15px 12px rgba(0,0,0,.18)
-    );
+  filter:drop-shadow(
+    0 15px 12px rgba(0,0,0,.18)
+  );
 
-  animation:
-    chibiFloat 4s ease-in-out infinite;
-
-  transform-origin:center bottom;
-
+  will-change:transform;
+  transform-origin:center center;
 }
 
 
@@ -882,3 +875,65 @@ footer .tiny{font-size:.68rem;opacity:.7}
   }
 
 }
+
+/* =========================================
+   HERO CHIBI ANIMATIONS
+========================================= */
+
+.hero-chibi{
+  position:relative;
+  z-index:2;
+
+  width:min(72%,320px);
+  max-height:230px;
+
+  object-fit:contain;
+
+  filter:drop-shadow(
+    0 15px 12px rgba(0,0,0,.18)
+  );
+
+  will-change:transform;
+  transform-origin:center center;
+}
+
+.hero-chibi.chibi-shark{
+  animation:sharkSwim 3s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-seastar{
+  animation:starWobble 4s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-horseshoe{
+  animation:horseshoeCrawl 3.5s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-moon{
+  animation:moonPulse 2.6s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-gecko{
+  animation:geckoCurious 3.5s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-ducky{
+  animation:duckyWiggle 2s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-candy{
+  animation:candyCrawl 2.8s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-tetra{
+  animation:tetraSwim 2.4s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-frog{
+  animation:frogBounce 2.8s ease-in-out infinite;
+}
+
+.hero-chibi.chibi-skink{
+  animation:skinkCreep 3.6s ease-in-out infinite;
+}
+
