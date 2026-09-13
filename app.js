@@ -376,10 +376,6 @@ document.getElementById("species-content").innerHTML =
     .join("");
 
 
-/* --------------------------------
-   HERO
--------------------------------- */
-
 
 /* --------------------------------
    NAVIGATION
