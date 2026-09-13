@@ -93,7 +93,7 @@ function renderSpecies(id, idx){
 
         <img
           src="${esc(s.chibi)}"
-          alt="Cute illustrated ${esc(s.name)}"
+          alt="${esc(s.imageAlt)}"
           class="chibi-image"
           loading="lazy"
         >
